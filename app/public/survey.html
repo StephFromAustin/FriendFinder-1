@@ -22,6 +22,10 @@
     #matchName {
         text-align: center;
     }
+
+    #aboutMe {
+        text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -29,119 +33,123 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Survey Questions</h1>
-                <p>All questions are on a one to five scale, one being strongly disagree and five being strongly agree</p>
+                 
                 <hr class="my-4">
                 <form method="POST">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name (Required)</label>
                         <input type="text" class="form-control" id="name" placeholder="Jane Doe">
                     </div>
                     <div class="form-group">
-                        <label for="picture">Picture Link</label>
+                        <label for="picture">Picture Link (Required)</label>
                         <input type="url" class='form-control' id="picture">
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutme">Tell us a little about yourself (Optional)</label>
+                        <input type="textarea" class="form-control" id="aboutme">
                     </div>
                     <div class="form-group">
                         <label for="question1">Are you a thrillseeker?</label>
                         <select class="form-control" id="question1">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Strongly agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question2">Are you a introvert(1) or an extrovert(5)?</label>
+                        <label for="question2">Are you a introvert or an extrovert?</label>
                         <select class="form-control" id="question2">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Very introverted)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Very extroverted)</option>
                         </select>
                     </div> 
                     <div class="form-group">
-                        <label for="question3">This is the third question?</label>
+                        <label for="question3">Are you an indoor or outdoor person?</label>
                         <select class="form-control" id="question3">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Very indoor)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Very outdoor)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question4">This is the fourth question?</label>
+                        <label for="question4">What time of day is your favorite?</label>
                         <select class="form-control" id="question4">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Early morning)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Late night)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question5">This is the fifth question?</label>
+                        <label for="question5">Would you consider yourself an animal person?</label>
                         <select class="form-control" id="question5">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Strongly agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question6">This is the sixth question?</label>
+                        <label for="question6">Do you share openly or do you prefer to kind information to yourself?</label>
                         <select class="form-control" id="question6">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Keep to yourself)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Share everything)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question7">This is the seventh question?</label>
+                        <label for="question7">Do you keep an open mind about other opinions even if they aren't your own?</label>
                         <select class="form-control" id="question7">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Strongly agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question8">This is the eighth question?</label>
+                        <label for="question8">Is having expensive tastes important to you?</label>
                         <select class="form-control" id="question8">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Strongly agree)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="question9">This is the ninth question?</label>
+                        <label for="question9">Is it important to stay youthful at heart?</label>
                         <select class="form-control" id="question9">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Strongly agree)</option>
                         </select>
                     </div> 
                     <div class="form-group">
-                        <label for="question10">This is the tenth question?</label>
+                        <label for="question10">Do you stick to plans when you make them, or are you flexible?</label>
                         <select class="form-control" id="question10">
-                            <option value='1'>1</option>
+                            <option value='1'>1 (Stick to your plans, no matter what)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='5'>5 (Going with the flow, no harm, no foul)</option>
                         </select>
                     </div> 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-md" id="submit">submit</button>
+                        <button type="submit" class="btn btn-primary btn-md" id="submit">Submit</button>
                     </div>                    
                 </form>
             </div>
@@ -166,6 +174,7 @@
                 <div class="modal-body" id="imgDiv">
                     <img src="" alt="Friend picture" id="matchPicture">
                 </div>
+                <p id='aboutMe'></p>
                 <div class="modal-footer">
                     <a role="button" href='/survey' class="btn btn-primary">Retake the quiz!</a>
                     <a role="button" href='/' class="btn btn-secondary">Close</a>
@@ -198,15 +207,17 @@
                 $('#question8').val().trim(),
                 $('#question9').val().trim(),
                 $('#question10').val().trim(),
-            ]
+            ],
+            aboutme: $('#aboutme').val()
         };
         console.log(newFriend);
 
         $.post(window.location.origin + '/api/friends', newFriend).done(function(data){
             console.log('New friend has been added to the api');
-
+            console.log(data.matchbio)
             $('#matchName').text(data.matchname);
-            $('#matchPicture').attr('src', data.matchpicture)
+            $('#matchPicture').attr('src', data.matchpicture);
+            $('#aboutMe').text(data.matchbio)
 
             $('#myModal').modal('show')
         });

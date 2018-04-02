@@ -1,6 +1,6 @@
 var friendArray = [
     {
-        name: 'Daniel',
+        name: 'Rick Sanchez',
         photo: 'http://via.placeholder.com/350x150',
         scores: [
             '1',
@@ -13,7 +13,8 @@ var friendArray = [
             '1',
             '1',
             '1'
-        ]
+        ],
+        aboutme: 'Wubba lubba dub dub'
     }
 ];
 

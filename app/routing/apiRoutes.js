@@ -18,6 +18,7 @@ module.exports = function(app){
 
         var matchName = '';
         var matchPicture = '';
+        var matchBio = '';
         var totalDiff = 100;
 
         for (var i = 0; i < friendData.length; i++){
@@ -32,11 +33,12 @@ module.exports = function(app){
                 totalDiff = diff;
                 matchName = friendData[i].name;
                 matchPicture = friendData[i].photo;
+                matchBio = friendData[i].aboutme;
             }
 
         }
         friendData.push(userData);
 
-        res.json({matchname: matchName, matchpicture: matchPicture});
+        res.json({matchname: matchName, matchpicture: matchPicture, matchbio: matchBio});
     })
 };
