@@ -1,7 +1,7 @@
 var friendArray = [
     {
         name: 'Rick Sanchez',
-        photo: 'http://via.placeholder.com/350x150',
+        photo: 'https://static.comicvine.com/uploads/original/10/101435/5985649-screenshot_2015-09-24_at_1.41.41_pm.png',
         scores: [
             '1',
             '1',
