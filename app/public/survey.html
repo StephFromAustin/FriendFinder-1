@@ -127,7 +127,7 @@
                         </select>
                     </div> 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-md" data-toggle="modal" data-target='#modal' id="submit">submit</button>
+                        <button type="submit" class="btn btn-primary btn-md" id="submit">submit</button>
                     </div>                    
                 </form>
             </div>
@@ -139,7 +139,7 @@
         </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id="modal">
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -148,9 +148,9 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="matchName"></div>
+                <div id="matchName"></div>
                 <div class="modal-body">
-                    <img src="" alt="Friend picture" class="matchPicture">
+                    <img src="" alt="Friend picture" id="matchPicture">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Retake the quiz!</button>
@@ -189,7 +189,12 @@
         console.log(newFriend);
 
         $.post(window.location.origin + '/api/friends', newFriend).done(function(data){
-            console.log('New friend has been added to the api')
+            console.log('New friend has been added to the api');
+
+            $('#matchName').text(data.matchname);
+            $('#matchPicture').attr('src', data.matchpicture)
+
+            $('#myModal').modal('show')
         });
 
         

@@ -12,6 +12,31 @@ module.exports = function(app){
     });
 
     app.post('/api/friends', function(req, res){
-        friendData.push(req.body);
+        var userData = req.body;
+
+        var userScores = userData.scores;
+
+        var matchName = '';
+        var matchPicture = '';
+        var totalDiff = 100;
+
+        for (var i = 0; i < friendData.length; i++){
+
+            var diff = 0;
+            
+            for (var j = 0; j < userScores.length; j++){
+                diff += Math.abs(friendData[i].scores[j] - userScores[j]);
+            }
+
+            if(diff < totalDiff){
+                totalDiff = diff;
+                matchName = friendData[i].name;
+                matchPicture = friendData[i].photo;
+            }
+
+        }
+        friendData.push(userData);
+
+        res.json({matchname: matchName, matchpicture: matchPicture});
     })
 };
